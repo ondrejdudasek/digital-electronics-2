@@ -2,10 +2,14 @@
 ## Text formatting
 ### Italic text
 *Italic text* is created using \*  characters before and after the text. 
+
 `*Italic text* is created using \* characters before and after the text.`
+
 ### Bold text
-**Bold text** is created using double \*\* characters before and after the text. 
+**Bold text** is created using double \*\* characters before and after the text.
+
 `**Bold text** is created using double \*\* characters before and after the text.`
+
 ## Lists (ordered, unordered)
 ### Ordered
 To create ordered list, just write numbers before list items.
