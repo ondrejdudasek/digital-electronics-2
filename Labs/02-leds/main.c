@@ -9,8 +9,8 @@
 #define LED_GREEN_ON()    PORTB = PORTB | (1<<LED_GREEN)
 #define LED_GREEN_OFF()   PORTB = PORTB & ~(1<<LED_GREEN)
 
-#define DEBOUNCE_FILTER_VALUE_MAX 250
-#define DEBOUNCE_FILTER_SAMPLE_FREQ 100
+#define DEBOUNCE_FILTER_VALUE_MAX 100
+#define DEBOUNCE_FILTER_SAMPLE_FREQ 1000
 
 
 #include <avr/io.h>     // AVR device-specific IO definitions

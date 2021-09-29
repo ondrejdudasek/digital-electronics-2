@@ -1,6 +1,7 @@
 # Lab 2: Control of GPIO, LED, push button
 
 <!--![Arduino Uno](Images/arduino_uno_leds.jpg) -->
+# Work in progress!
 
 <!-- 
 
