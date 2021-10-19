@@ -7,11 +7,11 @@ Link to your `Digital-electronics-2` GitHub repository:
 
 ## Overflow times
 
-|         Module        |   Number of bits  |   1   |   8   |   32  |   64  |  128  |  256  |  1024  |
-|          :-:          |         :-:       |  :-:  |  :-:  |  :-:  |  :-:  |  :-:  |  :-:  |   :-:  |
-|    Timer/Counter 0    |          8        |  16u  |  128u |  512u | 1024u | 2048u | 4096u | 16384u |
-|    Timer/Counter 1    |          16       | 4096u | 32.768m | 131.072m | 262.144m | 524.288m | 1.048576s | 4.194304s | 
-|    Timer/Counter 2    |          8        |  16u  |  128u |  512u | 1024u | 2048u | 4096u | 16384u |
+|     Module      | Number of bits |   1   |    8    |    32    |    64    |   128    |    256    |   1024    |
+| :-------------: | :------------: | :---: | :-----: | :------: | :------: | :------: | :-------: | :-------: |
+| Timer/Counter 0 |       8        |  16u  |  128u   |   512u   |  1024u   |  2048u   |   4096u   |  16384u   |
+| Timer/Counter 1 |       16       | 4096u | 32.768m | 131.072m | 262.144m | 524.288m | 1.048576s | 4.194304s |
+| Timer/Counter 2 |       8        |  16u  |  128u   |   512u   |  1024u   |  2048u   |   4096u   |  16384u   |
 
 ## Timer library
 
@@ -31,11 +31,10 @@ Link to your `Digital-electronics-2` GitHub repository:
 #define TIM0_stop()              TCCR0B &= ~((1<<CS12) | (1<<CS11) | (1<<CS10));          // 000 --> STOP
 #define TIM0_overflow_16us()     TCCR0B &= ~((1<<CS12) | (1<<CS11)); TCCR0B |= (1<<CS10); // 001 --> 1
 #define TIM0_overflow_128us()    TCCR0B &= ~((1<<CS12) | (1<<CS10)); TCCR0B |= (1<<CS11); // 010 --> 8
-#define TIM0_overflow_512us()    TCCR0B &= ~(1<<CS12);               TCCR0B |= (1<<CS11) | (1<<CS10);  // 011 --> 64
-#define TIM0_overflow_1024us()   TCCR0B &= ~((1<<CS11) | (1<<CS10)); TCCR0B |= (1<<CS12); // 100 --> 256
-#define TIM0_overflow_2048us()   TCCR0B &= ~(1<<CS11);               TCCR0B |= (1<<CS12) | (1<<CS10);  // 101 --> 1024
-#define TIM0_overflow_4096us()
-#define TIM0_overflow_1us()
+#define TIM0_overflow_1024us()   TCCR0B &= ~(1<<CS12);               TCCR0B |= (1<<CS11) | (1<<CS10);  // 011 --> 64
+#define TIM0_overflow_4096us()   TCCR0B &= ~((1<<CS11) | (1<<CS10)); TCCR0B |= (1<<CS12); // 100 --> 256
+#define TIM0_overflow_16384us()  TCCR0B &= ~(1<<CS11);               TCCR0B |= (1<<CS12) | (1<<CS10);  // 101 --> 1024
+
 ```
 
 3. Flowchart figure for function `main()` and interrupt service routine `ISR(TIMER1_OVF_vect)` of application that ensures the flashing of one LED in the timer interruption. When the button is pressed, the blinking is faster, when the button is released, it is slower. Use only a timer overflow and not a delay library. The image can be drawn on a computer or by hand. Use clear descriptions of the individual steps of the algorithms.
