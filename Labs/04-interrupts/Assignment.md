@@ -8,7 +8,7 @@ Link to your `Digital-electronics-2` GitHub repository:
 ## Overflow times
 
 |         Module        |   Number of bits  |   1   |   8   |   32  |   64  |  128  |  256  |  1024  |
-|          :=:          |         :=:       |  :=:  |  :=:  |  :=:  |  :=:  |  :=:  |  :=:  |   :=:  |
+|          :-:          |         :-:       |  :-:  |  :-:  |  :-:  |  :-:  |  :-:  |  :-:  |   :-:  |
 |    Timer/Counter 0    |          8        |  16u  |  128u |  512u | 1024u | 2048u | 4096u | 16384u |
 |    Timer/Counter 1    |          16       | 4096u | 32.768m | 131.072m | 262.144m | 524.288m | 1.048576s | 4.194304s | 
 |    Timer/Counter 2    |          8        |  16u  |  128u |  512u | 1024u | 2048u | 4096u | 16384u |
