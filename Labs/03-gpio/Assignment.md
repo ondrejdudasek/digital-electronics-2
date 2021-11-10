@@ -23,7 +23,7 @@ Link to your `Digital-electronics-2` GitHub repository:
 
 1. In your words, describe the difference between the declaration and the definition of the function in C.
    * Function declaration specifies to compiler what to expect and require for using declared functions - return and argument types
-   * Function definition contains algorithm itself, describes what function dows. 
+   * Function definition contains algorithm itself, describes what function does. 
 
 2. Part of the C code listing with syntax highlighting, which toggles LEDs only if push button is pressed. Otherwise, the value of the LEDs does not change. Use function from your GPIO library. Let the push button is connected to port D:
 
@@ -57,4 +57,4 @@ int main(void)
 
 1. Scheme of traffic light application with one red/yellow/green light for cars and one red/green light for pedestrians. Connect AVR device, LEDs, resistors, one push button (for pedestrians), and supply voltage. The image can be drawn on a computer or by hand. Always name all components and their values!
 
-   ![your figure]()
+![traffic_lights.png](traffic_lights.png)

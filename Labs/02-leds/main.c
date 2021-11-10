@@ -17,8 +17,8 @@
 #include <util/delay.h>
 
 // Define only one part! 
-#define PART_2_LEDS
-//#define PART_3_BUTTON
+//#define PART_2_LEDS
+#define PART_3_BUTTON
 //#define PART_4_DEBOUNCE
 
 
